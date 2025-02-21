@@ -16,7 +16,7 @@ export default function Navbar() {
       <div className="flex items-center">
         <Image src={Logo} alt={"Logo"} />
 
-        <div className="hidden lg:flex">
+        <div className="hidden lg:flex pl-[74px]">
           {navLinks.map((item, index) => (
             <p key={index}>{item.name}</p>
           ))}

@@ -26,6 +26,9 @@ export default function Navbar() {
       </div>
 
       <div className="flex gap-5">
+        <p className="hidden lg:block font-medium text-[#36485C]">
+          Open an Account
+        </p>
         <div className="flex items-center gap-x-2">
           <Image src={User} alt={"Uer Profile"} />
           <span className="hidden font-medium text-[#36485C] lg:block">

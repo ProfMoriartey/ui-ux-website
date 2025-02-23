@@ -7,11 +7,6 @@ import Feed from "../../public/assets/Feed.svg";
 export function Footer() {
   return (
     <div className="pt-[80px] pb-[40px]">
-      <div className="flex items-center justify-center gap-x-[12px]">
-        <Image src={Logo} alt="Logo" />
-        <p className="font-bold text-[#36485C] text-[17px]">Jan Marshal</p>
-      </div>
-
       <ul className="flex flex-col items-center gap-y-[32px] pt-[56px] text-[#36485C] sm:flex-row sm:justify-center sm:gap-x-5 sm:pt-5">
         <li>Features</li>
         <li>Pricing</li>

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Logo from "../../public/assets/Logo.svg";
 import User from "../../public/assets/User.svg";
 import Menu from "../../public/assets/Menu.svg";
+import Link from "next/link";
 
 const navLinks = [
   { name: "Features" },
@@ -14,7 +15,9 @@ export default function Navbar() {
   return (
     <div className="flex w-full items-center justify-between px-[20px] py-[16px] lg:container lg:mx-auto lg:px-[20px]">
       <div className="flex items-center">
-        <Image src={Logo} alt={"Logo"} />
+        <Link href={"/"}>
+          <Image src={Logo} alt={"Logo"} />
+        </Link>
 
         <div className="hidden lg:flex pl-[74px] gap-x-[56px]">
           {navLinks.map((item, index) => (
